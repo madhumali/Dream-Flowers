@@ -1,0 +1,176 @@
+<div [@routerTransition]>
+    <!-- <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2> -->
+    <div class="row">
+        <div class="col-md-12">
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let slider of sliders">
+                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
+                    <div class="carousel-caption">
+                        <h3>{{slider.label}}</h3>
+                        <p>{{slider.text}}</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <hr>
+    <!-- <div class="row">
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'" ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'warning'" [icon]="'fa-tasks'" [count]="12" [label]="'New task!'" ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'success'" [icon]="'fa-shopping-cart'" [count]="124" [label]="'New Orders!'" ></app-stat>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+            <app-stat [bgClass]="'danger'" [icon]="'fa-support'" [count]="13" [label]="'New Tickets!'"></app-stat>
+        </div>
+    </div>
+    <hr />
+    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
+    <hr />
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card card-default">
+                <div class="card-header">
+                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                </div>
+                <!-- /.card-header 
+                <app-timeline></app-timeline>
+                <!-- /.card-body 
+            </div>
+            <!-- /.card 
+        </div>
+        <!-- /.col-lg-8 
+        <div class="col-lg-4">
+            <div class="card card-default mb-3">
+                <div class="card-header">
+                    <i class="fa fa-bell fa-fw"></i> Notifications card
+                </div>
+                <!-- /.card-header 
+                <app-notification></app-notification>
+                <!-- /.card-body 
+            </div>
+            <!-- /.card 
+
+            <app-chat></app-chat>
+            <!-- /.card .chat-card 
+        </div>
+        <!-- /.col-lg-4 
+    </div> -->
+
+    <div class="container">
+        <div class="row mb-5">
+          <!-- <div class="col-xl-3 col-sm-12 mb-3">
+            <div class="card text-black bg-primary">
+              <a routerLink="rose" routerLinkActive="active"><img class="card-img-top"src="../../../assets/images/image3.jpg" style="height: 24rem;"  alt="Card image cap"></a>
+              <div class="card-body">
+                <div class="mr-5">WEDDING</div>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-xl-3 col-sm-6 mb-3" *ngFor="let addproduct of products">
+            <div class="card" >
+              <a routerLink="rose" routerLinkActive="active"><img class="card-img-top" src={{addproduct.product_img}} alt="Card image cap"></a>
+              <div class="card-body">
+                <div class="caption">
+                    <h3>{{addproduct.product_name}}</h3>
+                    <div class="clearfix"> 
+                      <div class="price pull-left">{{addproduct.product_price }}</div>
+                        <a href="#" class="btn btn-dark btn-lg  pull-right" role="button" [routerLink]="['/add-to-cart' ,addproduct._id]">Shop</a>
+                        <!-- <button (click)="addcart()"
+                              >Shop</button> -->
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-xl-3 col-sm-12 mb-3">
+            <div class="card text-white bg-success">
+              <img class="card-img-top" src="../../../assets/images/image3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="mr-5">FESTIVAL</div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-danger">
+              <img class="card-img-top" src="../../../assets/images/image3.jpg" alt="Card image cap" style="height: 23.5rem;">
+              <div class="card-body">
+                <div class="mr-5">PARTY</div>
+              </div>
+            </div>
+          </div> -->
+      
+          <!-- <div class="col-xl-3 col-sm-6 mb-3">
+              <div class="card text-white bg-primary">
+                <img class="card-img-top"src="../../../assets/images/image3.jpg" alt="Card image cap" style="height: 23.5rem;">
+                <div class="card-body">
+                  <div class="mr-5">CINNAMON LAKESIDE</div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card text-white bg-warning">
+                  <img class="card-img-top" src="../../../assets/images/image3.jpg" alt="Card image cap" style="height: 23.5rem;">
+                  <div class="card-body">
+                    <div class="mr-5">KINGSBURY</div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="col-xl-3 col-sm-6 mb-3">
+                  <div class="card text-white bg-success">
+                    <img class="card-img-top" src="../../../assets/images/image3.jpg" alt="Card image cap" style="height: 23.5rem;">
+                    <div class="card-body">
+                      <div class="mr-5">SPONGE</div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="col-xl-3 col-sm-6 mb-3">
+                    <div class="card text-white bg-danger">
+                      <img class="card-img-top" src="../../../assets/images/image5.jpg" alt="Card image cap" style="height: 15.5rem;width:15.5rem;">
+                      <div class="card-body">
+                        <div class="mr-5">BREAD TALK</div>
+                      </div>
+                    </div>
+                  </div>
+       -->
+      
+                 
+      <!-- <div class="card text-white bg-danger">
+      <div class="mr-5">Send Cakes to Sri Lanka From Wishque. Looking for a stunning birthday cake, anniversary cake or even just a simple afternoon teacake or cupcake? Shop at Sri Lanka’s premium online cake shop WishQue. We deliver cakes island-wide and free delivery to many cities</div>
+      </div> -->
+        </div>
+      </div>
+
+      <!-- <hr>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4"  *ngFor="let addproduct of products">
+          <div class="card mb-4 box-shadow">
+              <a routerLink="rose" routerLinkActive="active"><img class="card-img-top1" src={{addproduct.product_img}} alt="Card image cap" class="img-responsive" style="height: 23.5rem;width:22.5rem;"></a>
+            <div class="card-body">
+              <div class="caption">
+                <h3>{{addproduct.product_name }}</h3>
+                <div class="clearfix"> 
+                  <div class="price pull-left">{{addproduct.product_price }}</div>
+                    <a href="#" class="btn btn-dark btn-lg  pull-right" role="button" [routerLink]="['/dashboard']">Shop</a>
+      
+                </div>
+      
+      
+              </div>
+            </div>
+      
+      
+          </div>
+      
+      
+      
+      
+        </div>
+      </div> -->
+      
+</div>

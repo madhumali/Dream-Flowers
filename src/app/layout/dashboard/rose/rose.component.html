@@ -1,0 +1,439 @@
+<!-- <div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+   
+      <div class="row">
+          <div class="col-md-12">
+              <h3>
+                  Your Cart 
+                </h3>
+                <ul class="list-group">
+                  Price Lists
+               <li *ngFor="let price of prices;let i=index">{{i+1}}:{{price}}</li>
+               
+                  {{totalprice}}
+               
+               <button (click)="onCheckout()"  class="btn btn-success">Checkout</button>
+                </ul>
+          </div>
+        </div>
+      
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="https://yandex.uz/collections/card/59a9cbbad7f77d00b0a1d347/" alt="Card image cap">
+          <div class="card-body">
+              Price:$67
+            <p class="card-text">A wedding cake is the traditional cake served at wedding receptions following dinner. In some parts of England, the wedding cake is served at a wedding breakfast; </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <button type="button"  class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                <button (click)="onClick()" class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="http://localhost:4200/assets/shirt2.jpg" alt="Card image cap">
+          <div class="card-body">
+              Price:$57
+            <p class="card-text">A wedding cake is the traditional cake served at wedding receptions following dinner. In some parts of England, the wedding cake is served at a wedding breakfast;</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="http://localhost:4200/assets/tshirt2.jpg" alt="Card image cap">
+          <div class="card-body">
+              Price:$87
+            <p class="card-text">A wedding cake is the traditional cake served at wedding receptions following dinner. In some parts of England, the wedding cake is served at a wedding breakfast;</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <button type="button"  class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClickss()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+     
+
+    </div>
+  </div>
+</div> -->
+
+
+<style type="text/css">
+ 
+  .img-ho:hover {
+  /*opacity: 1;*/
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc; 
+}
+</style>
+
+<div class="album py-5 bg-light">
+  <div class="">
+    
+
+    <div class="row">
+   
+
+      <div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(120).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(121).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(122).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(123).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(124).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(125).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(126).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(127).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(128).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(129).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+<div class="col-md-4">
+        <div style="background-color: white;padding: 10px;" class="img-ho">
+        <a href="" target="_blank">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(130).jpg" alt="Lights" style="width:100%">
+          
+        </a>
+          <div class="caption">
+            <h4>Lorem ipsum Lorem ipsum</h4>
+            <h4>Price:$57</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+      </div>
+      <br>
+      </div>
+
+
+
+    
+      <!-- <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="http://localhost:4200/assets/shirt2.jpg" alt="Card image cap">
+          <div class="card-body">
+              Price:$57
+            <p class="card-text">A wedding cake is the traditional cake served at wedding receptions following dinner. In some parts of England, the wedding cake is served at a wedding breakfast;</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClicks()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="card-img-top" src="http://localhost:4200/assets/tshirt2.jpg" alt="Card image cap">
+          <div class="card-body">
+              Price:$87
+            <p class="card-text">A wedding cake is the traditional cake served at wedding receptions following dinner. In some parts of England, the wedding cake is served at a wedding breakfast;</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                  <button type="button"  class="btn btn-sm btn-outline-secondary">Wishlist</button>
+                  <button (click)="onClickss()"  class="btn btn-sm btn-outline-secondary">Add To Cart</button>
+              </div>
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     
+ -->
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-5"></div>
+          <div class="col-md-2" style="background-color: white;padding: 15px;padding-left: 30px;">
+              <h3>
+                  Your Cart 
+                </h3>
+                <ul class="list-group">
+                  Price Lists
+               <li *ngFor="let price of prices;let i=index">{{i+1}}:{{price}}</li>
+               
+                  {{totalprice}}
+               
+               <button (click)="onCheckout()"  class="btn btn-success">Checkout</button>
+                </ul>
+          </div>
+        </div>
+
+
+
+  </div>
+</div>
+
+
